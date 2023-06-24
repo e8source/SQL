@@ -17,7 +17,7 @@ desc employees;
 insert into employees(id, employee_name)
 values (default, 'Aleksey Ivanov'),
        (default, 'Roman Petrov'),
-	     (default, 'Aleksandr Makushev');
+	(default, 'Aleksandr Makushev');
 
 select * from employees;
 
@@ -33,7 +33,7 @@ desc salary;
 insert into salary(sal_id, monthly_salary)
 values (default, 1200000.00),
        (default, 300000.00),
-	     (default, 80000.00);
+	(default, 80000.00);
 
 select * from salary;
 
@@ -53,7 +53,7 @@ desc employee_salary;
 insert into employee_salary(id, employee_id, salary_id, insalary_date)
 values (default, 1, 3, '2023-06-01'),
        (default, 2, 1, '2023-06-15'),
-	     (default, 3, 2, '2023-05-02');
+	(default, 3, 2, '2023-05-02');
 
 select * from employee_salary;
 
@@ -78,8 +78,8 @@ drop column role_crew;
 insert into roles(id, role_name)
 values (default, 'python developer'),
        (default, 'typescript developer'),
-	     (default, 'COO'),
-	     (default, 'QA engineer');
+	(default, 'COO'),
+	(default, 'QA engineer');
 	   
 select * from roles
 
@@ -99,6 +99,6 @@ desc roles_employee
 insert into roles_employee(id, employee_id, role_id, inrole_date)
 values (default, 1, 2, '2023-02-15'),
        (default, 2, 3, default),
-	     (default, 3, 4, '2023-06-28');
+	(default, 3, 4, '2023-06-28');
 
 select * from roles_employee;
